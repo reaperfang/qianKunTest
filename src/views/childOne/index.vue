@@ -4,8 +4,6 @@
   </template>
   
   <script >
-  debugger
-  console.log('进去子应用');
   import { start } from "qiankun";
   export default {
     name: "childOne",

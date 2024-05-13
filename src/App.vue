@@ -2,18 +2,19 @@
 
 <template>
   <div>
-    <a href="https://vitejs.dev" target="_blank">
+    <!-- <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    </a> -->
     <span @click="doClick">child-vue3-one</span>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <router-view />
+  <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 import { useRouter } from 'vue-router';
 // let route = useRoute();
 let router = useRouter();
