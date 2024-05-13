@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
-import { registerMicroApps,start } from 'qiankun';
+import { registerMicroApps } from 'qiankun';
 import router from '@/router';
 registerMicroApps([
     // {
@@ -18,7 +18,6 @@ registerMicroApps([
       activeRule: "/child-one",
     },
 ]);
-start();
 const app = createApp(App);
 app.use(router).mount('#app');
 
